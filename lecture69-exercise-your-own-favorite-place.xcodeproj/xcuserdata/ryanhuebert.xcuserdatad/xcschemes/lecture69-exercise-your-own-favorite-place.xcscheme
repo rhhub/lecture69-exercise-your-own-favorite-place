@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0720"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AF61D3AB1C458758006BB4B2"
+               BuildableName = "lecture69-exercise-your-own-favorite-place.app"
+               BlueprintName = "lecture69-exercise-your-own-favorite-place"
+               ReferencedContainer = "container:lecture69-exercise-your-own-favorite-place.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AF61D3BF1C458758006BB4B2"
+               BuildableName = "lecture69-exercise-your-own-favorite-placeTests.xctest"
+               BlueprintName = "lecture69-exercise-your-own-favorite-placeTests"
+               ReferencedContainer = "container:lecture69-exercise-your-own-favorite-place.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AF61D3CA1C458758006BB4B2"
+               BuildableName = "lecture69-exercise-your-own-favorite-placeUITests.xctest"
+               BlueprintName = "lecture69-exercise-your-own-favorite-placeUITests"
+               ReferencedContainer = "container:lecture69-exercise-your-own-favorite-place.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AF61D3AB1C458758006BB4B2"
+            BuildableName = "lecture69-exercise-your-own-favorite-place.app"
+            BlueprintName = "lecture69-exercise-your-own-favorite-place"
+            ReferencedContainer = "container:lecture69-exercise-your-own-favorite-place.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AF61D3AB1C458758006BB4B2"
+            BuildableName = "lecture69-exercise-your-own-favorite-place.app"
+            BlueprintName = "lecture69-exercise-your-own-favorite-place"
+            ReferencedContainer = "container:lecture69-exercise-your-own-favorite-place.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AF61D3AB1C458758006BB4B2"
+            BuildableName = "lecture69-exercise-your-own-favorite-place.app"
+            BlueprintName = "lecture69-exercise-your-own-favorite-place"
+            ReferencedContainer = "container:lecture69-exercise-your-own-favorite-place.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
