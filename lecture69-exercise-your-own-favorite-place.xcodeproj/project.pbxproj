@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66C3CF63F82A1B06DCCA4D1C /* Pods_lecture69_exercise_your_own_favorite_place.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB8A136C8F37AD815B7DF3D /* Pods_lecture69_exercise_your_own_favorite_place.framework */; };
 		AF61D3B01C458758006BB4B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61D3AF1C458758006BB4B2 /* AppDelegate.swift */; };
 		AF61D3B21C458758006BB4B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61D3B11C458758006BB4B2 /* ViewController.swift */; };
 		AF61D3B51C458758006BB4B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF61D3B31C458758006BB4B2 /* Main.storyboard */; };
@@ -14,6 +15,18 @@
 		AF61D3BA1C458758006BB4B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF61D3B81C458758006BB4B2 /* LaunchScreen.storyboard */; };
 		AF61D3C51C458758006BB4B2 /* lecture69_exercise_your_own_favorite_placeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61D3C41C458758006BB4B2 /* lecture69_exercise_your_own_favorite_placeTests.swift */; };
 		AF61D3D01C458758006BB4B2 /* lecture69_exercise_your_own_favorite_placeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61D3CF1C458758006BB4B2 /* lecture69_exercise_your_own_favorite_placeUITests.swift */; };
+		AF61D3DE1C45896A006BB4B2 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61D3DD1C45896A006BB4B2 /* ButtonStyle.swift */; };
+		AF81BE951C472A6C0028D814 /* FullScreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BE941C472A6C0028D814 /* FullScreenImageView.swift */; };
+		AF81BE971C4812340028D814 /* DownloadableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BE961C4812340028D814 /* DownloadableImageView.swift */; };
+		AF81BE991C4848F50028D814 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BE981C4848F50028D814 /* AboutViewController.swift */; };
+		AF81BE9F1C4849FA0028D814 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BE9E1C4849FA0028D814 /* Extensions.swift */; };
+		AF81BEA11C484E990028D814 /* AboutImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BEA01C484E990028D814 /* AboutImageView.swift */; };
+		AF81BEA31C48693F0028D814 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BEA21C48693F0028D814 /* PhotosViewController.swift */; };
+		AF81BEA51C486B640028D814 /* Picture1ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BEA41C486B640028D814 /* Picture1ImageView.swift */; };
+		AF81BEA71C486B8D0028D814 /* Picture2ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BEA61C486B8D0028D814 /* Picture2ImageView.swift */; };
+		AF81BEA91C486C090028D814 /* Picture3ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BEA81C486C090028D814 /* Picture3ImageView.swift */; };
+		AF81BEAB1C486C110028D814 /* Picture4ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BEAA1C486C100028D814 /* Picture4ImageView.swift */; };
+		AF81BEAD1C486C180028D814 /* Picture5ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BEAC1C486C180028D814 /* Picture5ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BA187447135363DC95A9D0A /* Pods-lecture69-exercise-your-own-favorite-place.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lecture69-exercise-your-own-favorite-place.release.xcconfig"; path = "Pods/Target Support Files/Pods-lecture69-exercise-your-own-favorite-place/Pods-lecture69-exercise-your-own-favorite-place.release.xcconfig"; sourceTree = "<group>"; };
 		AF61D3AC1C458758006BB4B2 /* lecture69-exercise-your-own-favorite-place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lecture69-exercise-your-own-favorite-place.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF61D3AF1C458758006BB4B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF61D3B11C458758006BB4B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,20 @@
 		AF61D3CB1C458758006BB4B2 /* lecture69-exercise-your-own-favorite-placeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lecture69-exercise-your-own-favorite-placeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF61D3CF1C458758006BB4B2 /* lecture69_exercise_your_own_favorite_placeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lecture69_exercise_your_own_favorite_placeUITests.swift; sourceTree = "<group>"; };
 		AF61D3D11C458758006BB4B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF61D3DD1C45896A006BB4B2 /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		AF81BE941C472A6C0028D814 /* FullScreenImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenImageView.swift; sourceTree = "<group>"; };
+		AF81BE961C4812340028D814 /* DownloadableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadableImageView.swift; sourceTree = "<group>"; };
+		AF81BE981C4848F50028D814 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		AF81BE9E1C4849FA0028D814 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AF81BEA01C484E990028D814 /* AboutImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutImageView.swift; sourceTree = "<group>"; };
+		AF81BEA21C48693F0028D814 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		AF81BEA41C486B640028D814 /* Picture1ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture1ImageView.swift; sourceTree = "<group>"; };
+		AF81BEA61C486B8D0028D814 /* Picture2ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture2ImageView.swift; sourceTree = "<group>"; };
+		AF81BEA81C486C090028D814 /* Picture3ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture3ImageView.swift; sourceTree = "<group>"; };
+		AF81BEAA1C486C100028D814 /* Picture4ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture4ImageView.swift; sourceTree = "<group>"; };
+		AF81BEAC1C486C180028D814 /* Picture5ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture5ImageView.swift; sourceTree = "<group>"; };
+		AFA29721B03B8CCC4C660864 /* Pods-lecture69-exercise-your-own-favorite-place.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lecture69-exercise-your-own-favorite-place.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lecture69-exercise-your-own-favorite-place/Pods-lecture69-exercise-your-own-favorite-place.debug.xcconfig"; sourceTree = "<group>"; };
+		EAB8A136C8F37AD815B7DF3D /* Pods_lecture69_exercise_your_own_favorite_place.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lecture69_exercise_your_own_favorite_place.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C3CF63F82A1B06DCCA4D1C /* Pods_lecture69_exercise_your_own_favorite_place.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +103,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5445D6B13C686B8FAFD1FEF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAB8A136C8F37AD815B7DF3D /* Pods_lecture69_exercise_your_own_favorite_place.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A414E312D18844E9495D54FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFA29721B03B8CCC4C660864 /* Pods-lecture69-exercise-your-own-favorite-place.debug.xcconfig */,
+				2BA187447135363DC95A9D0A /* Pods-lecture69-exercise-your-own-favorite-place.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AF61D3A31C458758006BB4B2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +127,8 @@
 				AF61D3C31C458758006BB4B2 /* lecture69-exercise-your-own-favorite-placeTests */,
 				AF61D3CE1C458758006BB4B2 /* lecture69-exercise-your-own-favorite-placeUITests */,
 				AF61D3AD1C458758006BB4B2 /* Products */,
+				A414E312D18844E9495D54FD /* Pods */,
+				5445D6B13C686B8FAFD1FEF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +145,11 @@
 		AF61D3AE1C458758006BB4B2 /* lecture69-exercise-your-own-favorite-place */ = {
 			isa = PBXGroup;
 			children = (
+				AF81BE9D1C4849CD0028D814 /* Supporting */,
+				AF81BE9C1C4849080028D814 /* Model */,
+				AF81BE9B1C4849040028D814 /* View */,
+				AF81BE9A1C4849010028D814 /* Controller */,
 				AF61D3AF1C458758006BB4B2 /* AppDelegate.swift */,
-				AF61D3B11C458758006BB4B2 /* ViewController.swift */,
 				AF61D3B31C458758006BB4B2 /* Main.storyboard */,
 				AF61D3B61C458758006BB4B2 /* Assets.xcassets */,
 				AF61D3B81C458758006BB4B2 /* LaunchScreen.storyboard */,
@@ -125,6 +176,47 @@
 			path = "lecture69-exercise-your-own-favorite-placeUITests";
 			sourceTree = "<group>";
 		};
+		AF81BE9A1C4849010028D814 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF61D3B11C458758006BB4B2 /* ViewController.swift */,
+				AF81BE981C4848F50028D814 /* AboutViewController.swift */,
+				AF81BEA21C48693F0028D814 /* PhotosViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AF81BE9B1C4849040028D814 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF81BE941C472A6C0028D814 /* FullScreenImageView.swift */,
+				AF81BEA01C484E990028D814 /* AboutImageView.swift */,
+				AF81BEA41C486B640028D814 /* Picture1ImageView.swift */,
+				AF81BEA61C486B8D0028D814 /* Picture2ImageView.swift */,
+				AF81BEA81C486C090028D814 /* Picture3ImageView.swift */,
+				AF81BEAA1C486C100028D814 /* Picture4ImageView.swift */,
+				AF81BEAC1C486C180028D814 /* Picture5ImageView.swift */,
+				AF61D3DD1C45896A006BB4B2 /* ButtonStyle.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AF81BE9C1C4849080028D814 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AF81BE9D1C4849CD0028D814 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				AF81BE961C4812340028D814 /* DownloadableImageView.swift */,
+				AF81BE9E1C4849FA0028D814 /* Extensions.swift */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF61D3D41C458758006BB4B2 /* Build configuration list for PBXNativeTarget "lecture69-exercise-your-own-favorite-place" */;
 			buildPhases = (
+				AF2BF99E11D093F4F74AEF79 /* Check Pods Manifest.lock */,
 				AF61D3A81C458758006BB4B2 /* Sources */,
 				AF61D3A91C458758006BB4B2 /* Frameworks */,
 				AF61D3AA1C458758006BB4B2 /* Resources */,
+				269EA33EA44334504B0F0EE2 /* Embed Pods Frameworks */,
+				94A55496464CD54B84291644 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +346,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		269EA33EA44334504B0F0EE2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lecture69-exercise-your-own-favorite-place/Pods-lecture69-exercise-your-own-favorite-place-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94A55496464CD54B84291644 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lecture69-exercise-your-own-favorite-place/Pods-lecture69-exercise-your-own-favorite-place-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF2BF99E11D093F4F74AEF79 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF61D3A81C458758006BB4B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF81BEA31C48693F0028D814 /* PhotosViewController.swift in Sources */,
+				AF81BEA11C484E990028D814 /* AboutImageView.swift in Sources */,
+				AF81BE991C4848F50028D814 /* AboutViewController.swift in Sources */,
+				AF81BEA51C486B640028D814 /* Picture1ImageView.swift in Sources */,
+				AF61D3DE1C45896A006BB4B2 /* ButtonStyle.swift in Sources */,
 				AF61D3B21C458758006BB4B2 /* ViewController.swift in Sources */,
+				AF81BE971C4812340028D814 /* DownloadableImageView.swift in Sources */,
+				AF81BEA91C486C090028D814 /* Picture3ImageView.swift in Sources */,
 				AF61D3B01C458758006BB4B2 /* AppDelegate.swift in Sources */,
+				AF81BEAD1C486C180028D814 /* Picture5ImageView.swift in Sources */,
+				AF81BEAB1C486C110028D814 /* Picture4ImageView.swift in Sources */,
+				AF81BE951C472A6C0028D814 /* FullScreenImageView.swift in Sources */,
+				AF81BEA71C486B8D0028D814 /* Picture2ImageView.swift in Sources */,
+				AF81BE9F1C4849FA0028D814 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +552,7 @@
 		};
 		AF61D3D51C458758006BB4B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA29721B03B8CCC4C660864 /* Pods-lecture69-exercise-your-own-favorite-place.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "lecture69-exercise-your-own-favorite-place/Info.plist";
@@ -408,6 +564,7 @@
 		};
 		AF61D3D61C458758006BB4B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BA187447135363DC95A9D0A /* Pods-lecture69-exercise-your-own-favorite-place.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "lecture69-exercise-your-own-favorite-place/Info.plist";
@@ -484,6 +641,7 @@
 				AF61D3D61C458758006BB4B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF61D3D71C458758006BB4B2 /* Build configuration list for PBXNativeTarget "lecture69-exercise-your-own-favorite-placeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +650,7 @@
 				AF61D3D91C458758006BB4B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF61D3DA1C458758006BB4B2 /* Build configuration list for PBXNativeTarget "lecture69-exercise-your-own-favorite-placeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +659,7 @@
 				AF61D3DC1C458758006BB4B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

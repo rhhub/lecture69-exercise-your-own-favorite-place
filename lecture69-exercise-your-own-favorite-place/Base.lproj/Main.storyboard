@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lecture69_exercise_your_own_favorite_place" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,255 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cYH-Gh-D6Y" customClass="FullScreenImageView" customModule="lecture69_exercise_your_own_favorite_place" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="oUV-pp-W6q">
+                                <rect key="frame" x="199" y="487" width="233" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACA-GT-zUk" customClass="ButtonStyle" customModule="lecture69_exercise_your_own_favorite_place" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="30"/>
+                                        <state key="normal" title="About Mountain High"/>
+                                        <connections>
+                                            <segue destination="mnf-HY-HmC" kind="showDetail" action="showViewController:sender:" id="WT6-jM-gq1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hG0-eJ-Z3m" customClass="ButtonStyle" customModule="lecture69_exercise_your_own_favorite_place" customModuleProvider="target">
+                                        <rect key="frame" x="185" y="0.0" width="48" height="30"/>
+                                        <state key="normal" title="Photos"/>
+                                        <connections>
+                                            <segue destination="hIY-qB-AeP" kind="showDetail" action="showViewController:sender:" id="cXW-ac-lQv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mountain High" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7os-tP-T25">
+                                <rect key="frame" x="213" y="39" width="175" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cYH-Gh-D6Y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4V1-z5-qS2"/>
+                            <constraint firstItem="oUV-pp-W6q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rck-W2-rtY"/>
+                            <constraint firstItem="7os-tP-T25" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZLg-ZR-AUt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oUV-pp-W6q" secondAttribute="bottom" constant="60" id="gkO-DF-sSM"/>
+                            <constraint firstItem="7os-tP-T25" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="iDl-HQ-0dG"/>
+                            <constraint firstItem="cYH-Gh-D6Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oAJ-L6-5Wq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cYH-Gh-D6Y" secondAttribute="bottom" id="qBk-pU-T0T"/>
+                            <constraint firstItem="cYH-Gh-D6Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sUG-zI-FZs"/>
+                            <constraint firstAttribute="trailing" secondItem="cYH-Gh-D6Y" secondAttribute="trailing" id="t9s-aH-tdh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="sUG-zI-FZs"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="463" y="451"/>
+        </scene>
+        <!--Photos View Controller-->
+        <scene sceneID="B9K-5S-Seg">
+            <objects>
+                <viewController id="hIY-qB-AeP" customClass="PhotosViewController" customModule="lecture69_exercise_your_own_favorite_place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m1W-1N-cJQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="st1-Dm-f0c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="glm-r9-u8F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CQ4-dQ-zDt">
+                                <rect key="frame" x="20" y="25" width="558" height="555"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mhc-Rc-H2J">
+                                        <rect key="frame" x="0.0" y="0.0" width="558" height="179"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jCv-1q-iYI" customClass="Picture1ImageView" customModule="lecture69_exercise_your_own_favorite_place" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="274" height="179"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8xb-DC-wDS" customClass="Picture2ImageView" customModule="lecture69_exercise_your_own_favorite_place" customModuleProvider="target">
+                                                <rect key="frame" x="284" y="0.0" width="274" height="179"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l6z-5u-xWa">
+                                        <rect key="frame" x="0.0" y="189" width="558" height="178"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eVm-Pd-eqd" customClass="Picture3ImageView" customModule="lecture69_exercise_your_own_favorite_place" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="274" height="178"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hkW-eB-B5G" customClass="Picture4ImageView" customModule="lecture69_exercise_your_own_favorite_place" customModuleProvider="target">
+                                                <rect key="frame" x="284" y="0.0" width="274" height="178"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ipS-nm-WsN" customClass="Picture5ImageView" customModule="lecture69_exercise_your_own_favorite_place" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="377" width="558" height="179"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUG-VW-L0D" customClass="ButtonStyle" customModule="lecture69_exercise_your_own_favorite_place" customModuleProvider="target">
+                                <rect key="frame" x="25" y="30" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="hIY-qB-AeP" eventType="touchUpInside" id="ypj-hL-TtF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WUG-VW-L0D" firstAttribute="top" secondItem="m1W-1N-cJQ" secondAttribute="bottom" constant="10" id="1Zo-zJ-R2g"/>
+                            <constraint firstItem="CQ4-dQ-zDt" firstAttribute="leading" secondItem="WUG-VW-L0D" secondAttribute="trailing" id="7zB-RX-TKT"/>
+                            <constraint firstItem="WUG-VW-L0D" firstAttribute="leading" secondItem="glm-r9-u8F" secondAttribute="leadingMargin" constant="5" id="DEV-eo-2Y4"/>
+                            <constraint firstItem="st1-Dm-f0c" firstAttribute="top" secondItem="CQ4-dQ-zDt" secondAttribute="bottom" constant="20" id="E8R-9w-9J7"/>
+                            <constraint firstItem="CQ4-dQ-zDt" firstAttribute="top" secondItem="m1W-1N-cJQ" secondAttribute="bottom" constant="5" id="H7g-yD-cVt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CQ4-dQ-zDt" secondAttribute="trailing" constant="2" id="ZEf-PM-e4e"/>
+                            <constraint firstItem="CQ4-dQ-zDt" firstAttribute="leading" secondItem="glm-r9-u8F" secondAttribute="leadingMargin" id="yy7-4l-7Db"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7zB-RX-TKT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWs-An-pKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1251" y="798"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="P6C-aa-Ink">
+            <objects>
+                <viewController id="mnf-HY-HmC" customClass="AboutViewController" customModule="lecture69_exercise_your_own_favorite_place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ASh-yk-fZX"/>
+                        <viewControllerLayoutGuide type="bottom" id="C5f-bf-em1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jn1-Eb-f6I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dkj-F6-s36">
+                                <rect key="frame" x="20" y="65" width="560" height="515"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="6Ba-Mk-Cua" customClass="AboutImageView" customModule="lecture69_exercise_your_own_favorite_place" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="198"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rJ9-DK-d3I">
+                                        <rect key="frame" x="0.0" y="198" width="560" height="317"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8rL-1m-qQH">
+                                                <rect key="frame" x="0.0" y="0.0" width="142" height="44"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Max Capacity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekk-XZ-as8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stuffed to the brim." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbe-1T-O9r">
+                                                        <rect key="frame" x="0.0" y="25" width="142" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EIf-cn-ciE">
+                                                <rect key="frame" x="0.0" y="49" width="219" height="44"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Brief History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43I-Af-1wn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opened with rope tow in 1937." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifH-qa-sWW">
+                                                        <rect key="frame" x="0.0" y="25" width="219" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9h0-ZY-OCS">
+                                                <rect key="frame" x="0.0" y="98" width="560" height="170"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gah-OQ-Hh8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ez0-I5-XWc">
+                                                        <rect key="frame" x="0.0" y="25" width="560" height="146"/>
+                                                        <string key="text">Mountain High resort is a winter resort in the San Gabriel Mountains in Los Angeles County in California. Mountain High is the most-visited resort in Southern California. The resort is located along State Route 2 west of Wrightwood, California. The elevation of the resort is 6,600 feet (2,000 m) to 8,200 feet (2,500 m) for the Mountain High East Resort, 7,000 feet (2,100 m) to 8,000 feet (2,400 m) for the West Resort and 7,200 feet (2,200 m) to 7,800 ft (2,400 m) for the North Resort.</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fbo-hy-U5H">
+                                                <rect key="frame" x="0.0" y="273" width="215" height="44"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Things To Do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwO-LN-uWT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="99" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snowboarding, Skiing, Tubing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrS-Am-Big">
+                                                        <rect key="frame" x="0.0" y="25" width="215" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2F-zf-Oi7" customClass="ButtonStyle" customModule="lecture69_exercise_your_own_favorite_place" customModuleProvider="target">
+                                <rect key="frame" x="25" y="28" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="mnf-HY-HmC" eventType="touchUpInside" id="RVF-Bj-H8b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z2F-zf-Oi7" firstAttribute="top" secondItem="ASh-yk-fZX" secondAttribute="bottom" constant="10" id="0AB-yN-7wd"/>
+                            <constraint firstItem="Z2F-zf-Oi7" firstAttribute="leading" secondItem="jn1-Eb-f6I" secondAttribute="leadingMargin" constant="5" id="49a-BQ-QfE"/>
+                            <constraint firstItem="C5f-bf-em1" firstAttribute="top" secondItem="dkj-F6-s36" secondAttribute="bottom" constant="20" id="7Ad-PT-wek"/>
+                            <constraint firstItem="Z2F-zf-Oi7" firstAttribute="top" secondItem="jn1-Eb-f6I" secondAttribute="topMargin" constant="20" id="LQa-X8-UyW"/>
+                            <constraint firstItem="dkj-F6-s36" firstAttribute="top" secondItem="Z2F-zf-Oi7" secondAttribute="bottom" constant="5" id="T2W-Cd-zJc"/>
+                            <constraint firstItem="dkj-F6-s36" firstAttribute="top" secondItem="ASh-yk-fZX" secondAttribute="bottom" constant="20" id="TBz-rD-HNP"/>
+                            <constraint firstItem="dkj-F6-s36" firstAttribute="trailing" secondItem="jn1-Eb-f6I" secondAttribute="trailingMargin" id="chN-va-tUs"/>
+                            <constraint firstItem="dkj-F6-s36" firstAttribute="leading" secondItem="jn1-Eb-f6I" secondAttribute="leadingMargin" id="osX-yr-iag"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LQa-X8-UyW"/>
+                                <exclude reference="TBz-rD-HNP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u6X-br-zeo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1297" y="92"/>
         </scene>
     </scenes>
 </document>
